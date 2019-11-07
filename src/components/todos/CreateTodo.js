@@ -25,6 +25,7 @@ class CreateTodo extends Component {
           </p>
           <input type="submit" onChange={ this.handleChange } value={this.state.text} />
           </form>
+          {this.state.text}
       </div>
     )
   }
