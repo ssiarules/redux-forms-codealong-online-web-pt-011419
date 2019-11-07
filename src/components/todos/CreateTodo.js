@@ -15,7 +15,7 @@ class CreateTodo extends Component {
       addTodo: (formData) => dispatch(<some action>)
 
     };
-  }
+  };
 
   handleChange = (event) => {
     this.setState({
