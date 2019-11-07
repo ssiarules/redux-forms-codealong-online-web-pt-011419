@@ -10,16 +10,18 @@ class CreateTodo extends Component {
     };
   }
 
-  const mapDispatchToProps = (dispatch) => {
-    return {
-      addTodo: (formData) => dispatch({type: 'ADD_TODO', payload: formData})
-    };
-  };
+
 
   handleChange = (event) => {
     this.setState({
       text: event.target.value
     });
+  };
+
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      addTodo: (formData) => dispatch({type: 'ADD_TODO', payload: formData})
+    };
   };
 
   render() {
