@@ -1,8 +1,5 @@
 export default function manageTodo(state = {
-  todos: [
-    { text: 'buy groceries'},
-    { text: 'watch netflix'}
-  ],
+  todos: [];
 }, action) {
 
   console.log("reducer received this action:", action);
