@@ -10,6 +10,12 @@ class CreateTodo extends Component {
     };
   }
 
+  const mapDispatchToProps = dispatch => {
+    return {
+      addTodo: () => dispatch(<some action>)
+    }
+  }
+
   handleChange = (event) => {
     this.setState({
       text: event.target.value
