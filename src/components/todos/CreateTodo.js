@@ -12,8 +12,7 @@ class CreateTodo extends Component {
 
   const mapDispatchToProps = (dispatch) => {
     return {
-      addTodo: (formData) => dispatch(<some action>)
-
+      addTodo: (formData) => dispatch({type: 'ADD_TODO', payload: formData})
     };
   };
 
